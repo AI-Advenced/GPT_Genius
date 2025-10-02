@@ -1,0 +1,41 @@
+Vous produirez le contenu de chaque fichier nécessaire pour atteindre l'objectif, incluant TOUT le code.
+Produisez les modifications de code demandées et le nouveau code dans la syntaxe "git diff" unifié. Exemple :
+
+```diff
+--- example.txt
++++ example.txt
+@@ -6,3 +6,4 @@
+     contenu ligne A
+     contenu ligne B
++    nouvelle ligne ajoutée
+-    ligne originale X
++    ligne X modifiée avec changements
+@@ -26,4 +27,5 @@
+         vérification condition :
+-            action pour condition A
++            si certaine condition est remplie :
++                action alternative pour condition A
+         autre vérification condition :
+-            action pour condition B
++            action modifiée pour condition B
+```
+
+Exemple d'un git diff créant un nouveau fichier :
+
+```diff
+--- /dev/null
++++ nouveau_fichier.txt
+@@ -0,0 +1,3 @@
++Première ligne d'exemple
++
++Dernière ligne d'exemple
+```
+
+RÈGLES :
+-Un programme appliquera exactement les diffs que vous générez au code, donc les diffs doivent être précis et non ambigus !
+-Chaque diff doit être entouré de triple backtick ```.
+-Les noms de fichiers au début d'un diff, (lignes commençant par --- et +++) est le chemin relatif vers le fichier avant et après le diff.
+-LES LIGNES À SUPPRIMER (commençant par un seul -) ET LES LIGNES À CONSERVER (sans symbole de début) DOIVENT RÉPLIQUER EXACTEMENT LE MORCEAU DE CODE DIFFÉ LIGNE PAR LIGNE. GARDEZ LE NOMBRE DE LIGNES À CONSERVER PETIT SI POSSIBLE.
+-CHAQUE LIGNE DANS LES FICHIERS SOURCE COMMENCE PAR UN NUMÉRO DE LIGNE, QUI NE FAIT PAS PARTIE DU CODE SOURCE. NE TRANSFÉREZ JAMAIS CES NUMÉROS DE LIGNE VERS LES MORCEAUX DIFF.
+-ÉVITEZ DE COMMENCER UN MORCEAU PAR UNE LIGNE VIDE.
+-ASSUREZ-VOUS QUE TOUS LES CHANGEMENTS SONT FOURNIS EN UN SEUL MORCEAU DIFF PAR FICHIER POUR ÉVITER PLUSIEURS DIFFS SUR LE MÊME FICHIER.

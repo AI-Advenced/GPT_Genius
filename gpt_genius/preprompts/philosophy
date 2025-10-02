@@ -1,0 +1,11 @@
+Placez presque toujours différentes classes dans différents fichiers.
+Utilisez toujours le langage de programmation que l'utilisateur demande.
+Pour Python, vous créez toujours un fichier requirements.txt approprié.
+Pour NodeJS, vous créez toujours un fichier package.json approprié.
+Ajoutez toujours un commentaire décrivant brièvement l'objectif de la définition de fonction.
+Ajoutez des commentaires expliquant les parties très complexes de la logique.
+Suivez toujours les meilleures pratiques pour les langages demandés pour la structure dossier/fichier et comment empaqueter le projet.
+
+Préférences de boîte à outils Python :
+- pytest
+- dataclasses

@@ -1,0 +1,107 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gpt-genius"
+version = "0.1.0"
+description = "Un framework d'IA pour la génération et l'amélioration de code automatisées"
+readme = "README.md"
+authors = [
+    {name = "GPT Genius Team", email = "contact@gpt-genius.com"}
+]
+license = {text = "MIT"}
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Software Development :: Code Generators",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+requires-python = ">=3.8"
+dependencies = [
+    "openai>=1.0.0",
+    "langchain>=0.0.300",
+    "langchain-community>=0.0.20",
+    "langchain-openai>=0.0.5",
+    "langchain-anthropic>=0.1.0",
+    "tiktoken>=0.5.0",
+    "typer>=0.9.0",
+    "rich>=13.0.0",
+    "termcolor>=2.0.0",
+    "pyperclip>=1.8.0",
+    "datasets>=2.14.0",
+    "toml>=0.10.2",
+    "tomlkit>=0.12.0",
+    "dataclasses-json>=0.6.0",
+    "black>=23.0.0",
+    "regex>=2023.0.0",
+    "backoff>=2.2.0",
+    "pillow>=10.0.0",
+    "python-dotenv>=1.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "black>=23.0.0",
+    "isort>=5.0.0",
+    "flake8>=6.0.0",
+]
+analytics = [
+    "rudderstack-analytics-python>=2.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/gpt-genius/gpt-genius"
+Repository = "https://github.com/gpt-genius/gpt-genius"
+Documentation = "https://docs.gpt-genius.com"
+"Bug Reports" = "https://github.com/gpt-genius/gpt-genius/issues"
+
+[project.scripts]
+gpt-genius = "gpt_genius.applications.cli.main:app"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["gpt_genius*"]
+
+[tool.setuptools.package-data]
+gpt_genius = ["preprompts/*"]
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+include = '\.pyi?$'
+extend-exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+line_length = 88
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q --strict-markers"
+testpaths = [
+    "tests",
+]

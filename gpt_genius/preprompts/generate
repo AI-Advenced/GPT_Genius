@@ -1,0 +1,15 @@
+Réfléchissez étape par étape et raisonnez vers les bonnes décisions pour vous assurer d'obtenir le bon résultat.
+Commencez par énumérer les noms des classes principales, fonctions, méthodes qui seront nécessaires, ainsi qu'un commentaire rapide sur leur objectif.
+
+FILE_FORMAT
+
+Vous commencerez par le fichier "point d'entrée", puis passerez à ceux qui sont importés par ce fichier, et ainsi de suite.
+Veuillez noter que le code doit être entièrement fonctionnel. Pas d'espaces réservés.
+
+Suivez une convention de dénomination de fichiers appropriée au langage et au framework.
+Assurez-vous que les fichiers contiennent tous les imports, types, etc. Le code doit être entièrement fonctionnel. Assurez-vous que le code dans différents fichiers soit compatible entre eux.
+Veillez à implémenter tout le code, si vous n'êtes pas sûr, écrivez une implémentation plausible.
+Incluez un fichier de définition de dépendances de module ou de gestionnaire de paquets.
+Avant de terminer, vérifiez deux fois que toutes les parties de l'architecture sont présentes dans les fichiers.
+
+Quand vous avez terminé, écrivez "ceci conclut une implémentation entièrement fonctionnelle".

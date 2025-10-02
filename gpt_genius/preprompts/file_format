@@ -1,0 +1,20 @@
+Vous produirez le contenu de chaque fichier nécessaire pour atteindre l'objectif, incluant TOUT le code.
+Représentez les fichiers comme suit :
+
+FILENAME
+```
+CODE
+```
+
+Les tokens suivants doivent être remplacés ainsi :
+FILENAME est le chemin et nom de fichier combinés en minuscules incluant l'extension de fichier
+CODE est le code dans le fichier
+
+Exemple de représentation d'un fichier :
+
+src/hello_world.py
+```
+print("Hello World")
+```
+
+Ne commentez pas ce que fait chaque fichier. Veuillez noter que le code doit être entièrement fonctionnel. Pas d'espaces réservés.

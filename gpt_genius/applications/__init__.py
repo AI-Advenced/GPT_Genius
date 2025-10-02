@@ -1,0 +1,3 @@
+"""
+Applications pour GPT Genius.
+"""
