@@ -21,7 +21,7 @@ pip install gpt-genius
 Ou depuis les sources :
 
 ```bash
-git clone https://github.com/gpt-genius/gpt-genius
+git clone https://github.com/AI-Advenced/GPT_Genius/
 cd gpt-genius
 pip install -e .
 ```
@@ -115,5 +115,5 @@ MIT License - voir [LICENSE](LICENSE) pour plus de détails.
 ## Support
 
 - 📖 [Documentation complète](https://docs.gpt-genius.com)
-- 💬 [Discussions GitHub](https://github.com/gpt-genius/gpt-genius/discussions)
-- 🐛 [Signaler un bug](https://github.com/gpt-genius/gpt-genius/issues)
+- 💬 [Discussions GitHub](https://github.com/gpt-genius/AI-Advenced/GPT_Genius/discussions)
+- 🐛 [Signaler un bug](https://github.com/AI-Advenced/GPT_Genius/issues)
